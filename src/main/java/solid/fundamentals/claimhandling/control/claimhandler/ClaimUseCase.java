@@ -1,4 +1,4 @@
-package solid.fundamentals.claimhandling.control;
+package solid.fundamentals.claimhandling.control.claimhandler;
 
 import solid.fundamentals.claimhandling.database.PersistenceGateway;
 

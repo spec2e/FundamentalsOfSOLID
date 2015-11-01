@@ -1,9 +1,9 @@
-package solid.fundamentals.claimhandling.model;
+package solid.fundamentals.claimhandling.model.customer;
 
 /**
  * Created by zapp on 01/11/15.
  */
-public class PersonalInjuryClaim extends Claim {
+public class PersonalInjuryCustomerClaim extends CustomerClaim {
 
     String descriptionOfInjury;
 

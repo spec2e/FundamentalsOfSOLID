@@ -1,4 +1,6 @@
-package solid.fundamentals.claimhandling.model;
+package solid.fundamentals.claimhandling.model.claimhandler;
+
+import solid.fundamentals.claimhandling.model.Car;
 
 /**
  * Created by zapp on 01/11/15.

@@ -1,9 +1,9 @@
 package solid.fundamentals.claimhandling.boundary;
 
-import solid.fundamentals.claimhandling.control.CreateAutoClaim;
-import solid.fundamentals.claimhandling.control.CreatePersonalInjuryClaim;
-import solid.fundamentals.claimhandling.control.CreatePrivateClaim;
-import solid.fundamentals.claimhandling.model.Claim;
+import solid.fundamentals.claimhandling.control.claimhandler.CreateAutoClaim;
+import solid.fundamentals.claimhandling.control.claimhandler.CreatePersonalInjuryClaim;
+import solid.fundamentals.claimhandling.control.claimhandler.CreatePrivateClaim;
+import solid.fundamentals.claimhandling.model.claimhandler.Claim;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;

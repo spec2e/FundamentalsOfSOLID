@@ -1,11 +1,13 @@
-package solid.fundamentals.claimhandling.model;
+package solid.fundamentals.claimhandling.model.customer;
+
+import solid.fundamentals.claimhandling.model.Person;
 
 import java.util.Date;
 
 /**
  * Created by zapp on 01/11/15.
  */
-public class Claim {
+public class CustomerClaim {
 
     String id;
     Date dateOfClaim;

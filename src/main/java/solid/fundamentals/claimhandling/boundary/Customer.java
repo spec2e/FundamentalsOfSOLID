@@ -1,7 +1,7 @@
 package solid.fundamentals.claimhandling.boundary;
 
-import solid.fundamentals.claimhandling.control.CreateAutoClaim;
-import solid.fundamentals.claimhandling.model.Claim;
+import solid.fundamentals.claimhandling.control.customer.CreateAutoCustomerClaim;
+import solid.fundamentals.claimhandling.model.customer.CustomerClaim;
 
 import javax.inject.Inject;
 
@@ -11,17 +11,16 @@ import javax.inject.Inject;
 public class Customer {
 
     @Inject
-    CreateAutoClaim createAutoClaim;
+    CreateAutoCustomerClaim createAutoClaim;
 
-    public Claim createAutoClaim(String name,
+    public CustomerClaim createAutoClaim(String name,
                                   String insuredCarsLicensePlate,
                                   String counterpartsLicensePlate) {
 
         return createAutoClaim.execute(
                 name,
                 insuredCarsLicensePlate,
-                counterpartsLicensePlate,
-                null);
+                counterpartsLicensePlate);
     }
 
 

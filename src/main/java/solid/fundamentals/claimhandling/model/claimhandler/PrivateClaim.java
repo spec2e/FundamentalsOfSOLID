@@ -1,4 +1,4 @@
-package solid.fundamentals.claimhandling.model;
+package solid.fundamentals.claimhandling.model.claimhandler;
 
 import java.util.List;
 
