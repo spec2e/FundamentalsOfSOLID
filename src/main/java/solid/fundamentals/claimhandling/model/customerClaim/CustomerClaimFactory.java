@@ -1,4 +1,4 @@
-package solid.fundamentals.claimhandling.model.customer;
+package solid.fundamentals.claimhandling.model.customerClaim;
 
 import java.util.Date;
 import java.util.List;

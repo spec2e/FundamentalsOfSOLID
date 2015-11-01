@@ -1,6 +1,6 @@
 package solid.fundamentals.claimhandling.database;
 
-import solid.fundamentals.claimhandling.model.customer.CustomerClaim;
+import solid.fundamentals.claimhandling.model.customerClaim.CustomerClaim;
 
 /**
  * Created by zapp on 01/11/15.

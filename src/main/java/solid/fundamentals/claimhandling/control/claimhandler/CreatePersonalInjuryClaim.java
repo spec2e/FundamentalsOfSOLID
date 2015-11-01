@@ -1,7 +1,7 @@
 package solid.fundamentals.claimhandling.control.claimhandler;
 
-import solid.fundamentals.claimhandling.model.claimhandler.Claim;
-import solid.fundamentals.claimhandling.model.claimhandler.ClaimFactory;
+import solid.fundamentals.claimhandling.model.claim.Claim;
+import solid.fundamentals.claimhandling.model.claim.ClaimFactory;
 
 import java.util.Date;
 

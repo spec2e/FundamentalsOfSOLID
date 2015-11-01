@@ -3,7 +3,7 @@ package solid.fundamentals.claimhandling.boundary;
 import solid.fundamentals.claimhandling.control.claimhandler.CreateAutoClaim;
 import solid.fundamentals.claimhandling.control.claimhandler.CreatePersonalInjuryClaim;
 import solid.fundamentals.claimhandling.control.claimhandler.CreatePrivateClaim;
-import solid.fundamentals.claimhandling.model.claimhandler.Claim;
+import solid.fundamentals.claimhandling.model.claim.Claim;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;

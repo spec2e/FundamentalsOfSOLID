@@ -1,11 +1,11 @@
-package solid.fundamentals.claimhandling.model.customer;
+package solid.fundamentals.claimhandling.model.claim;
 
 import java.util.List;
 
 /**
  * Created by zapp on 01/11/15.
  */
-public class PrivateCustomerClaim extends CustomerClaim {
+public class PrivateClaim extends Claim {
 
     List<String> lostProperty;
 

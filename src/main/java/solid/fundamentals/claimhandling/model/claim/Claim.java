@@ -1,4 +1,4 @@
-package solid.fundamentals.claimhandling.model.claimhandler;
+package solid.fundamentals.claimhandling.model.claim;
 
 import solid.fundamentals.claimhandling.model.Person;
 

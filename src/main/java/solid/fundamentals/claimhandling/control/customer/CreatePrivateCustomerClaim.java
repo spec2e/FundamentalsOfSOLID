@@ -1,7 +1,7 @@
 package solid.fundamentals.claimhandling.control.customer;
 
-import solid.fundamentals.claimhandling.model.customer.CustomerClaim;
-import solid.fundamentals.claimhandling.model.customer.CustomerClaimFactory;
+import solid.fundamentals.claimhandling.model.customerClaim.CustomerClaim;
+import solid.fundamentals.claimhandling.model.customerClaim.CustomerClaimFactory;
 
 import java.util.Date;
 import java.util.List;

@@ -1,11 +1,11 @@
-package solid.fundamentals.claimhandling.model.claimhandler;
+package solid.fundamentals.claimhandling.model.customerClaim;
 
 import solid.fundamentals.claimhandling.model.Car;
 
 /**
  * Created by zapp on 01/11/15.
  */
-public class AutoClaim extends Claim {
+public class AutoCustomerClaim extends CustomerClaim {
 
     private Car insuredCar;
     private Car counterpart;

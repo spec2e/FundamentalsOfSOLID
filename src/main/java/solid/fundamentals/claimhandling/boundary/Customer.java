@@ -1,7 +1,7 @@
 package solid.fundamentals.claimhandling.boundary;
 
 import solid.fundamentals.claimhandling.control.customer.CreateAutoCustomerClaim;
-import solid.fundamentals.claimhandling.model.customer.CustomerClaim;
+import solid.fundamentals.claimhandling.model.customerClaim.CustomerClaim;
 
 import javax.inject.Inject;
 

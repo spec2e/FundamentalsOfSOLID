@@ -1,4 +1,4 @@
-package solid.fundamentals.claimhandling.model.customer;
+package solid.fundamentals.claimhandling.model.customerClaim;
 
 /**
  * Created by zapp on 01/11/15.
