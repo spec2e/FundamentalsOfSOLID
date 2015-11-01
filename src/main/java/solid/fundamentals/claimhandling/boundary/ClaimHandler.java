@@ -1,6 +1,6 @@
 package solid.fundamentals.claimhandling.boundary;
 
-import solid.fundamentals.claimhandling.control.CreateClaim;
+import solid.fundamentals.claimhandling.control.CreateAutoClaim;
 import solid.fundamentals.claimhandling.model.Claim;
 
 import javax.ejb.Stateless;
@@ -14,22 +14,22 @@ import java.util.Date;
 public class ClaimHandler {
 
     @Inject
-    CreateClaim createClaim;
+    CreateAutoClaim createAutoClaim;
 
     Claim createAutoClaim(String name,
                            String insuredCarsLicensePlate,
                            String counterpartsLicensePlate) {
 
-        return createClaim.execute(new Date(),
+        return createAutoClaim.execute(new Date(),
                 new Date(),
-                "AUTO",
                 name,
-                null,
-                null,
                 insuredCarsLicensePlate,
                 counterpartsLicensePlate,
                 "This is the secret information");
 
     }
+
+
+
 
 }
