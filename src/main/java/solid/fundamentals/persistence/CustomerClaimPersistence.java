@@ -1,7 +1,7 @@
 package solid.fundamentals.persistence;
 
-import solid.fundamentals.claimhandling.database.CustomerPersistenceGateway;
-import solid.fundamentals.claimhandling.model.customerClaim.CustomerClaim;
+import solid.fundamentals.claimhandling.customerClaim.persistence.CustomerPersistenceGateway;
+import solid.fundamentals.claimhandling.customerClaim.entity.CustomerClaim;
 
 /**
  * Created by zapp on 01/11/15.
