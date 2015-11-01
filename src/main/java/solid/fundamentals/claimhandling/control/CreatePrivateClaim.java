@@ -13,16 +13,14 @@ public class CreatePrivateClaim extends ClaimUseCase {
 
 
     public Claim execute(
-            Date claimDate,
-            Date accidentDate,
             String name,
             List<String> property,
             String secretInformation
     ) {
 
         Claim privateClaim = ClaimFactory.createPrivateClaim(
-                claimDate,
-                accidentDate,
+                new Date(),
+                new Date(),
                 name,
                 property,
                 secretInformation);

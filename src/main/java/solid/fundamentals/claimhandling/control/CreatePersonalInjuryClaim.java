@@ -12,16 +12,14 @@ public class CreatePersonalInjuryClaim extends ClaimUseCase {
 
 
     public Claim execute(
-            Date claimDate,
-            Date accidentDate,
             String name,
             String descriptionOfInjury,
             String secretInformation
     ) {
 
         Claim personalInjuryClaim = ClaimFactory.createPersonalInjuryClaim(
-                claimDate,
-                accidentDate,
+                new Date(),
+                new Date(),
                 name,
                 descriptionOfInjury,
                 secretInformation);

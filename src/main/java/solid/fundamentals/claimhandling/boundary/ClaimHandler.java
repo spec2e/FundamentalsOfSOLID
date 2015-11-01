@@ -1,11 +1,13 @@
 package solid.fundamentals.claimhandling.boundary;
 
 import solid.fundamentals.claimhandling.control.CreateAutoClaim;
+import solid.fundamentals.claimhandling.control.CreatePersonalInjuryClaim;
+import solid.fundamentals.claimhandling.control.CreatePrivateClaim;
 import solid.fundamentals.claimhandling.model.Claim;
 
 import javax.ejb.Stateless;
 import javax.inject.Inject;
-import java.util.Date;
+import java.util.List;
 
 /**
  * Created by zapp on 01/11/15.
@@ -16,20 +18,45 @@ public class ClaimHandler {
     @Inject
     CreateAutoClaim createAutoClaim;
 
-    Claim createAutoClaim(String name,
-                           String insuredCarsLicensePlate,
-                           String counterpartsLicensePlate) {
+    @Inject
+    CreatePrivateClaim createPrivateClaim;
 
-        return createAutoClaim.execute(new Date(),
-                new Date(),
+    @Inject
+    CreatePersonalInjuryClaim createPersonalClaim;
+
+    Claim createAutoClaim(String name,
+                          String insuredCarsLicensePlate,
+                          String counterpartsLicensePlate,
+                          String secretInformation) {
+
+        return createAutoClaim.execute(
                 name,
                 insuredCarsLicensePlate,
                 counterpartsLicensePlate,
-                "This is the secret information");
+                secretInformation);
 
     }
 
 
+    Claim createPrivateClaim(String name,
+                             List<String> lostProperty,
+                             String secretInformation) {
+
+        return createPrivateClaim.execute(
+                name,
+                lostProperty,
+                secretInformation);
+    }
+
+    Claim createPersonalInjuryClaim(String name,
+                                    String injuryDescription,
+                                    String secretInformation) {
+
+        return createPersonalClaim.execute(
+                name,
+                injuryDescription,
+                secretInformation);
+    }
 
 
 }

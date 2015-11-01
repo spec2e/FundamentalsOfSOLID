@@ -12,8 +12,6 @@ public class CreateAutoClaim extends ClaimUseCase {
 
 
     public Claim execute(
-            Date claimDate,
-            Date accidentDate,
             String name,
             String insuredCarsLicensePlate,
             String counterpartsLicensePlate,
@@ -21,8 +19,8 @@ public class CreateAutoClaim extends ClaimUseCase {
     ) {
 
         Claim autoClaim = ClaimFactory.createAutoClaim(
-                claimDate,
-                accidentDate,
+                new Date(),
+                new Date(),
                 name,
                 insuredCarsLicensePlate,
                 counterpartsLicensePlate,
