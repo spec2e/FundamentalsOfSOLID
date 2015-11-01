@@ -11,7 +11,6 @@ public class CustomerClaim {
     Date dateOfClaim;
     Date dateOfAccident;
     Person personWithClaim;
-    String someSecretInformation;
 
     public String getId() {
         return id;
@@ -45,11 +44,4 @@ public class CustomerClaim {
         this.personWithClaim = personWithClaim;
     }
 
-    public String getSomeSecretInformation() {
-        return someSecretInformation;
-    }
-
-    public void setSomeSecretInformation(String someSecretInformation) {
-        this.someSecretInformation = someSecretInformation;
-    }
 }
