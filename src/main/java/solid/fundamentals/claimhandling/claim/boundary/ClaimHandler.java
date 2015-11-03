@@ -1,8 +1,6 @@
 package solid.fundamentals.claimhandling.claim.boundary;
 
-import solid.fundamentals.claimhandling.claim.control.CreateAutoClaim;
-import solid.fundamentals.claimhandling.claim.control.CreatePersonalInjuryClaim;
-import solid.fundamentals.claimhandling.claim.control.CreatePrivateClaim;
+import solid.fundamentals.claimhandling.claim.control.*;
 import solid.fundamentals.claimhandling.claim.entity.Claim;
 
 import javax.ejb.Stateless;
@@ -16,20 +14,29 @@ import java.util.List;
 public class ClaimHandler {
 
     @Inject
-    CreateAutoClaim createAutoClaim;
+    CreateAutoClaim createAutoClaimUseCase;
 
     @Inject
-    CreatePrivateClaim createPrivateClaim;
+    CreatePrivateClaim createPrivateClaimUseCase;
 
     @Inject
-    CreatePersonalInjuryClaim createPersonalClaim;
+    CreatePersonalInjuryClaim createPersonalClaimUseCase;
 
-    Claim createAutoClaim(String name,
+    @Inject
+    ViewAutoClaim viewAutoClaimUseCase;
+
+    @Inject
+    ViewPersonalInjuryClaim viewPersonalInjuryClaimUseCase;
+
+    @Inject
+    ViewPrivateClaim viewPrivateClaimUseCase;
+
+    public Claim createAutoClaim(String name,
                           String insuredCarsLicensePlate,
                           String counterpartsLicensePlate,
                           String secretInformation) {
 
-        return createAutoClaim.execute(
+        return createAutoClaimUseCase.execute(
                 name,
                 insuredCarsLicensePlate,
                 counterpartsLicensePlate,
@@ -38,25 +45,35 @@ public class ClaimHandler {
     }
 
 
-    Claim createPrivateClaim(String name,
+    public Claim createPrivateClaim(String name,
                              List<String> lostProperty,
                              String secretInformation) {
 
-        return createPrivateClaim.execute(
+        return createPrivateClaimUseCase.execute(
                 name,
                 lostProperty,
                 secretInformation);
     }
 
-    Claim createPersonalInjuryClaim(String name,
+    public Claim createPersonalInjuryClaim(String name,
                                     String injuryDescription,
                                     String secretInformation) {
 
-        return createPersonalClaim.execute(
+        return createPersonalClaimUseCase.execute(
                 name,
                 injuryDescription,
                 secretInformation);
     }
 
+    public Claim viewAutoClaim(String id) {
+        return viewAutoClaimUseCase.execute(id);
+    }
 
+    public Claim viewPersonalInjuryClaim(String id) {
+        return viewAutoClaimUseCase.execute(id);
+    }
+
+    public Claim viewPrivateClaim(String id) {
+        return viewPrivateClaimUseCase.execute(id);
+    }
 }
