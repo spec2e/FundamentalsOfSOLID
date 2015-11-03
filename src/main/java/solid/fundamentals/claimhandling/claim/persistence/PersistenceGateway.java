@@ -7,12 +7,12 @@ import solid.fundamentals.claimhandling.claim.entity.Claim;
  */
 public interface PersistenceGateway {
 
-    public String createClaim(Claim claim);
+    String createClaim(Claim claim);
 
-    public void updateClaim(Claim claim);
+    void updateClaim(Claim claim);
 
-    public Claim fetchClaim(String id);
+    Claim fetchClaim(String id);
 
-    public void deleteClaim(String id);
+    void deleteClaim(String id);
 
 }

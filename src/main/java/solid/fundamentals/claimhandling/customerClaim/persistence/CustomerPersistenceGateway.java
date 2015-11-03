@@ -7,11 +7,11 @@ import solid.fundamentals.claimhandling.customerClaim.entity.CustomerClaim;
  */
 public interface CustomerPersistenceGateway {
 
-    public String createClaim(CustomerClaim claim);
+    String createClaim(CustomerClaim claim);
 
-    public void updateClaim(CustomerClaim claim);
+    void updateClaim(CustomerClaim claim);
 
-    public CustomerClaim fetchClaim(String id);
+    CustomerClaim fetchClaim(String id);
 
-    public void deleteClaim(String id);
+    void deleteClaim(String id);
 }
